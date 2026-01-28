@@ -263,3 +263,75 @@ if (carouselTrack && carouselPrev && carouselNext) {
   // El scroll nativo del navegador maneja el touch en móviles
   // No se necesita código adicional - el CSS ya está optimizado
 }
+
+
+// ========================================
+// FORMULARIO DE CONTACTO
+// ========================================
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(contactForm);
+    const data = Object.fromEntries(formData);
+    
+    // Construir mensaje para WhatsApp
+    const mensaje = `Hola, soy ${data.contacto} de ${data.nombre}.
+
+Solicito cotización para:
+📋 Servicio: ${data.servicio}
+👥 Número de personas: ${data.personas}
+📞 Teléfono: ${data.telefono}
+📧 Email: ${data.email}
+
+${data.mensaje ? 'Detalles adicionales:\n' + data.mensaje : ''}`;
+    
+    const whatsappURL = `https://wa.me/584241520170?text=${encodeURIComponent(mensaje)}`;
+    window.open(whatsappURL, '_blank');
+    
+    // Mostrar confirmación
+    alert('✅ Te redirigiremos a WhatsApp para confirmar tu solicitud');
+    contactForm.reset();
+  });
+}
+
+
+// ========================================
+// SMOOTH SCROLL MEJORADO CON OFFSET
+// ========================================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href === '#' || href === '#inicio') {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      return;
+    }
+    
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const headerOffset = 80;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Cerrar menú móvil si está abierto
+      const navMenu = document.getElementById('navMenu');
+      const hamburger = document.getElementById('hamburger');
+      if (navMenu && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+  });
+});

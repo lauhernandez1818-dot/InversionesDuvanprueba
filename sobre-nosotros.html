@@ -179,6 +179,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
+            background: transparent;
         }
         
         .lightbox-image {
@@ -195,6 +196,28 @@
             text-align: center;
             margin-top: 1rem;
             font-size: 1rem;
+        }
+        
+        /* Texto instructivo de swipe */
+        .lightbox-swipe-hint {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 0.875rem;
+            background: rgba(0,0,0,0.7);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 500;
+            z-index: 10001;
+            display: none;
+            animation: fadeInOut 3s ease-in-out infinite;
+        }
+        
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
         }
         
         /* MÓVIL: Imagen ampliada MUY GRANDE */
@@ -251,27 +274,26 @@
                 font-weight: 600;
             }
             
+            /* Ocultar botones de navegación en móvil */
             .lightbox-nav {
-                width: 60px;
-                height: 60px;
-                font-size: 32px;
-                background: rgba(0,0,0,0.5);
-                backdrop-filter: blur(10px);
+                display: none !important;
             }
             
-            .lightbox-prev {
-                left: 5px;
-            }
-            
+            .lightbox-prev,
             .lightbox-next {
-                right: 5px;
+                display: none !important;
+            }
+            
+            /* Mostrar texto instructivo en móvil */
+            .lightbox-swipe-hint {
+                display: block !important;
             }
         }
         
         .lightbox-close {
-            position: absolute;
-            top: -40px;
-            right: 0;
+            position: fixed;
+            top: 20px;
+            right: 20px;
             background: var(--color-primary);
             color: white;
             border: none;
@@ -284,8 +306,8 @@
             align-items: center;
             justify-content: center;
             transition: transform 0.2s ease;
-            z-index: 10000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 10001;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
         
         .lightbox-close:hover {
@@ -297,27 +319,29 @@
         }
         
         .lightbox-nav {
-            position: absolute;
+            position: fixed;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255,255,255,0.2);
-            color: white;
-            border: none;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            border: 2px solid rgba(255,255,255,0.3);
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.2s ease;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            z-index: 10001;
         }
         
         .lightbox-nav:hover {
-            background: rgba(255,255,255,0.3);
+            background: white;
             transform: translateY(-50%) scale(1.1);
         }
         
@@ -326,24 +350,26 @@
         }
         
         .lightbox-prev {
-            left: 10px;
+            left: 20px;
         }
         
         .lightbox-next {
-            right: 10px;
+            right: 20px;
         }
         
         /* Contador */
         .lightbox-counter {
-            position: absolute;
-            top: -40px;
-            left: 0;
+            position: fixed;
+            top: 20px;
+            left: 20px;
             color: white;
             font-size: 0.875rem;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.7);
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-weight: 600;
+            z-index: 10001;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
         
         /* Footer Simple */
@@ -515,6 +541,7 @@
             <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Siguiente">›</button>
             <img src="" alt="" class="lightbox-image" id="lightboxImage">
             <div class="lightbox-caption" id="lightboxCaption"></div>
+            <div class="lightbox-swipe-hint">← Desliza para cambiar →</div>
         </div>
     </div>
 
@@ -598,7 +625,21 @@
         
         lightbox.addEventListener('touchstart', (e) => {
             touchStartX = e.changedTouches[0].screenX;
-        });
+            touchStartY = e.changedTouches[0].screenY;
+        }, { passive: false });
+        
+        lightbox.addEventListener('touchmove', (e) => {
+            // Prevenir navegación del navegador durante swipe horizontal
+            const touchMoveX = e.changedTouches[0].screenX;
+            const touchMoveY = e.changedTouches[0].screenY;
+            const deltaX = Math.abs(touchMoveX - touchStartX);
+            const deltaY = Math.abs(touchMoveY - touchStartY);
+            
+            // Si el movimiento es más horizontal que vertical, prevenir navegación
+            if (deltaX > deltaY) {
+                e.preventDefault();
+            }
+        }, { passive: false });
         
         lightbox.addEventListener('touchend', (e) => {
             touchEndX = e.changedTouches[0].screenX;
@@ -606,9 +647,14 @@
         });
         
         function handleSwipe() {
-            if (touchEndX < touchStartX - 50) showNext();
-            if (touchEndX > touchStartX + 50) showPrev();
+            const swipeDistance = touchEndX - touchStartX;
+            if (Math.abs(swipeDistance) > 50) {
+                if (swipeDistance < 0) showNext(); // Deslizar izquierda = siguiente
+                if (swipeDistance > 0) showPrev(); // Deslizar derecha = anterior
+            }
         }
+        
+        let touchStartY = 0;
     </script>
 
 </body>
