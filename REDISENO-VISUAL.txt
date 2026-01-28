@@ -1,0 +1,374 @@
+═══════════════════════════════════════════════════════════════════
+    ✅ REDISEÑO COMPLETADO - MÁS VISUAL, MENOS BOTONES
+    Landing Page Inversiones Duvan
+═══════════════════════════════════════════════════════════════════
+
+🎨 CAMBIOS REALIZADOS siguiendo el modelo Pretzels
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📝 RESUMEN DE CAMBIOS                                            │
+└───────────────────────────────────────────────────────────────────┘
+
+✅ ELIMINADO: 4 botones "Ver PDF" (Desayunos, Almuerzos, Cenas, Catering)
+✅ AGREGADO: Carrusel horizontal con 6 fotos de productos
+✅ AGREGADO: Sección "El Equipo" con foto de los dueños
+✅ MEJORADO: Diseño más visual y fotográfico
+✅ MANTENIDO: Solo 1 botón "Descargar Dossier Completo" en footer
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🔄 ANTES vs DESPUÉS                                              │
+└───────────────────────────────────────────────────────────────────┘
+
+ANTES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❌ 4 tarjetas con íconos SVG
+❌ 4 botones "Ver PDF" separados
+❌ Mucho texto en listas
+❌ Poco contenido visual
+❌ Grid estático de 4 cards
+
+DESPUÉS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Carrusel horizontal con 6 fotos
+✅ CERO botones "Ver PDF" individuales
+✅ Fotos grandes de productos
+✅ Contenido 80% visual
+✅ Carrusel deslizable e interactivo
+✅ Sección "El Equipo" con foto de los dueños
+✅ Solo 1 botón "Conocer Más" (lleva a galería completa)
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📸 NUEVA ESTRUCTURA DE LA PÁGINA                                 │
+└───────────────────────────────────────────────────────────────────┘
+
+1. HEADER (sticky)
+   ☰ Hamburger | INVERSIONES DUVAN
+
+2. HERO
+   [Imagen de fondo grande]
+   "Alimentación Corporativa de Alta Gama"
+
+3. SOBRE NOSOTROS (compacto)
+   [3 estadísticas]
+   - 15+ Años
+   - 6,000 Comidas
+   - 100% Logística
+
+4. ✨ CARRUSEL DE PRODUCTOS (NUEVO)
+   [6 fotos horizontales deslizables]
+   ← Desayunos | Almuerzos | Cenas | Catering | Especiales | Postres →
+   
+   SIN botones "Ver PDF" ✅
+
+5. ✨ EL EQUIPO (NUEVO)
+   [Foto de los dueños/equipo] + Texto
+   Botón: "Conocer Más" → galería completa
+
+6. FOOTER
+   Logo | Enlaces | Contacto
+   Botón: "Descargar Dossier Completo"
+
+7. WHATSAPP (flotante)
+   💚 Botón circular con tu logo
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📂 IMÁGENES QUE NECESITAS AGREGAR                                │
+└───────────────────────────────────────────────────────────────────┘
+
+📸 CARPETA: imagenes/
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 PARA EL CARRUSEL (6 imágenes):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. producto-1.webp
+   Descripción: Desayunos (arepas, cachitos, empanadas)
+   Tamaño: 800x900px vertical
+   Formato: WebP, quality 80-85
+
+2. producto-2.webp
+   Descripción: Almuerzos (pollo, asado negro, contornos)
+   Tamaño: 800x900px vertical
+   Formato: WebP, quality 80-85
+
+3. producto-3.webp
+   Descripción: Cenas (hamburguesas, parrillas, pepitos)
+   Tamaño: 800x900px vertical
+   Formato: WebP, quality 80-85
+
+4. producto-4.webp
+   Descripción: Catering (eventos, buffet, mesas)
+   Tamaño: 800x900px vertical
+   Formato: WebP, quality 80-85
+
+5. producto-5.webp
+   Descripción: Especiales (platos destacados)
+   Tamaño: 800x900px vertical
+   Formato: WebP, quality 80-85
+
+6. producto-6.webp
+   Descripción: Postres y bebidas
+   Tamaño: 800x900px vertical
+   Formato: WebP, quality 80-85
+
+👥 PARA LA SECCIÓN DEL EQUIPO (1 imagen):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. equipo-duvan.webp
+   Descripción: Foto profesional de los dueños o equipo
+   Tamaño: 1200x900px horizontal
+   Formato: WebP, quality 85-90
+   Contenido: Dueños/equipo en cocina o con productos
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🎨 CARACTERÍSTICAS DEL CARRUSEL                                  │
+└───────────────────────────────────────────────────────────────────┘
+
+✅ DESLIZABLE:
+   - Touch swipe en móviles
+   - Botones ← → en desktop
+   - Scroll horizontal suave
+
+✅ RESPONSIVE:
+   - Móvil: 1 foto visible + scroll
+   - Tablet: 2-3 fotos visibles
+   - Desktop: 3-4 fotos visibles
+
+✅ EFECTOS:
+   - Hover: imagen se eleva y agranda
+   - Caption con nombre al fondo
+   - Sombras suaves
+
+✅ SIN BOTONES "VER PDF":
+   - Solo imágenes con títulos
+   - Experiencia más limpia
+   - Enfoque 100% visual
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  👥 CARACTERÍSTICAS SECCIÓN "EL EQUIPO"                           │
+└───────────────────────────────────────────────────────────────────┘
+
+LAYOUT:
+┌─────────────────────────────────────────────┐
+│  [TEXTO]           [FOTO DEL EQUIPO]        │
+│                                              │
+│  El Equipo de      ┌──────────────┐        │
+│  Inversiones       │              │        │
+│  Duvan             │   [FOTO]     │        │
+│                    │              │        │
+│  Detrás de cada    └──────────────┘        │
+│  comida hay un                              │
+│  equipo                                     │
+│  apasionado...                              │
+│                                              │
+│  [Botón: Conocer Más]                       │
+└─────────────────────────────────────────────┘
+
+CONTENIDO:
+✅ Título destacado
+✅ 2 párrafos sobre el equipo y los dueños
+✅ Botón "Conocer Más" → lleva a sobre-nosotros.html
+✅ Foto profesional horizontal
+
+ESTILO:
+- Fondo blanco/crema
+- Foto con sombra elegante
+- Texto alineado a la izquierda
+- Responsive (stacks en móvil)
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🎯 DÓNDE QUEDARON LOS PDFs                                       │
+└───────────────────────────────────────────────────────────────────┘
+
+ANTES: 4 botones "Ver PDF" individuales
+❌ Ver PDF Desayunos
+❌ Ver PDF Almuerzos
+❌ Ver PDF Cenas
+❌ Ver PDF Catering
+
+AHORA: 1 solo botón en el footer
+✅ "Descargar Dossier Completo" → presentacion-duvan.pdf
+   (Contiene TODA la información en un solo PDF)
+
+VENTAJAS:
+✓ Menos clutter visual
+✓ Experiencia más fluida
+✓ Usuario no se abruma con opciones
+✓ Enfoque en las fotos
+✓ PDF completo más profesional
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  ⚡ FUNCIONALIDADES DEL CARRUSEL                                  │
+└───────────────────────────────────────────────────────────────────┘
+
+DESKTOP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Botones ← → visibles
+✅ Click en botones para navegar
+✅ Hover en imagen = se eleva y agranda
+✅ 3-4 imágenes visibles simultáneamente
+✅ Scroll suave animado
+
+MÓVIL/TABLET:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Swipe horizontal (deslizar con dedo)
+✅ 1-2 imágenes visibles
+✅ Scroll natural de móvil
+✅ Sin botones (interfaz limpia)
+✅ Indicador visual de scroll
+
+ACCESIBILIDAD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ aria-label en botones
+✅ Navegación por teclado
+✅ loading="lazy" para performance
+✅ Alt text en todas las imágenes
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📊 COMPARATIVA DE BOTONES                                        │
+└───────────────────────────────────────────────────────────────────┘
+
+ASPECTO                  ANTES       DESPUÉS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Botones "Ver PDF"        4           0 ✅
+Botón Galería            1           1
+Botón Dossier            1           1
+Botón Conocer Más        0           1 ✅
+──────────────────────────────────────────────
+TOTAL BOTONES:           6           3 (50% menos)
+
+ENFOQUE:
+ANTES: Botones y texto
+AHORA: Fotos y visual ✅
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🎨 TIPS PARA LAS FOTOS DEL CARRUSEL                              │
+└───────────────────────────────────────────────────────────────────┘
+
+COMPOSICIÓN:
+✅ Fotos verticales (800x900px)
+✅ Productos centrados y claros
+✅ Buena iluminación
+✅ Fondo limpio o desenfocado
+✅ Colores vivos y apetitosos
+
+CONTENIDO SUGERIDO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Desayunos:
+   - Arepas rellenas bien presentadas
+   - Cachitos dorados
+   - Jugo natural
+   - Café humeante
+
+2. Almuerzos:
+   - Plato ejecutivo completo
+   - Pollo o carne bien presentada
+   - Contornos coloridos
+   - Vista apetitosa
+
+3. Cenas:
+   - Hamburguesa gourmet con papas
+   - O pepito generoso
+   - Presentación casual pero deliciosa
+
+4. Catering:
+   - Mesa de buffet
+   - O evento corporativo
+   - Gente sirviendo/comiendo
+   - Ambiente profesional
+
+5. Especiales:
+   - Tu plato estrella
+   - Mejor presentación
+   - Fotografía food styling
+
+6. Postres:
+   - Postres variados
+   - Bebidas refrescantes
+   - Colores atractivos
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  👥 TIPS PARA LA FOTO DEL EQUIPO                                  │
+└───────────────────────────────────────────────────────────────────┘
+
+COMPOSICIÓN:
+✅ Foto horizontal (1200x900px)
+✅ 2-4 personas (dueños + equipo clave)
+✅ Ambiente: cocina, comedor o con productos
+✅ Vestimenta: uniforme o ropa corporativa
+✅ Expresión: sonrientes, profesionales
+
+LOCACIONES SUGERIDAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. En la cocina industrial (con delantales)
+2. Junto a la línea de producción
+3. Con productos terminados
+4. En el área de empaque/entrega
+5. Mesa con platos presentados
+
+ESTILO:
+- Iluminación natural o profesional
+- Fondo desenfocado o neutro
+- Personas en primer plano
+- Transmite confianza y profesionalismo
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  ✅ CHECKLIST POST-IMÁGENES                                       │
+└───────────────────────────────────────────────────────────────────┘
+
+□ 1. Tomar/buscar 6 fotos de productos
+□ 2. Convertirlas a WebP (800x900px, quality 80-85)
+□ 3. Nombrarlas: producto-1.webp a producto-6.webp
+□ 4. Tomar/buscar 1 foto del equipo
+□ 5. Convertirla a WebP (1200x900px, quality 85-90)
+□ 6. Nombrarla: equipo-duvan.webp
+□ 7. Poner todas en carpeta imagenes/
+□ 8. Abrir index.html en navegador
+□ 9. Verificar que el carrusel funciona
+    - Desktop: botones ← →
+    - Móvil: swipe horizontal
+□ 10. Verificar sección del equipo
+□ 11. Probar hover en las imágenes del carrusel
+□ 12. Verificar responsividad en diferentes tamaños
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🚀 RESULTADO FINAL                                               │
+└───────────────────────────────────────────────────────────────────┘
+
+PÁGINA AHORA ES:
+✅ 80% visual (fotos grandes)
+✅ 20% texto (conciso y directo)
+✅ 0 botones "Ver PDF" individuales
+✅ 1 carrusel interactivo con 6 productos
+✅ 1 sección humanizada con foto del equipo
+✅ 3 botones totales (antes 6)
+✅ Experiencia similar a Pretzels (referencia)
+
+ENFOQUE:
+"Ver para creer" → Las fotos venden más que botones
+
+
+═══════════════════════════════════════════════════════════════════
+    🎉 ¡REDISEÑO COMPLETADO!
+    
+    ✅ Menos botones (6 → 3)
+    ✅ Más fotos (carrusel de 6)
+    ✅ Sección del equipo agregada
+    ✅ Diseño tipo Pretzels
+    ✅ 100% responsive
+    
+    SIGUIENTE PASO:
+    → Agregar 7 imágenes WebP (6 productos + 1 equipo)
+    → ¡Disfrutar de un diseño más visual y moderno!
+    
+═══════════════════════════════════════════════════════════════════

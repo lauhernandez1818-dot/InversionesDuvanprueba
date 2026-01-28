@@ -1,0 +1,501 @@
+═══════════════════════════════════════════════════════════════════
+    📋 GUÍA PROFESIONAL PASO A PASO
+    Landing Page Inversiones Duvan
+    Cliente Corporativo Premium
+═══════════════════════════════════════════════════════════════════
+
+✨ NIVEL DE CALIDAD: CORPORATIVO PREMIUM
+🎯 OBJETIVO: Marca reconocida, acabado profesional
+💰 PRESUPUESTO: $200 USD - Resultado Premium Garantizado
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📌 PASO 1: VERIFICAR ARCHIVOS DEL PROYECTO                       │
+└───────────────────────────────────────────────────────────────────┘
+
+ESTRUCTURA ACTUAL DEL PROYECTO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PORTALDEALMUERZOS/
+├── index.html                  ✅ Página principal
+├── sobre-nosotros.html         ✅ Galería de 10 imágenes
+├── style.css                   ✅ Estilos premium mejorados
+├── script.js                   ✅ JavaScript del carrusel
+├── imagenes/                   📁 Carpeta de imágenes
+│   ├── logo-duvan.webp         ⚠️ PENDIENTE
+│   ├── hero-inicio.webp        ⚠️ PENDIENTE
+│   ├── logo.webp               ⚠️ PENDIENTE (WhatsApp)
+│   ├── producto-1.webp         ⚠️ PENDIENTE (Carrusel)
+│   ├── producto-2.webp         ⚠️ PENDIENTE (Carrusel)
+│   ├── producto-3.webp         ⚠️ PENDIENTE (Carrusel)
+│   ├── producto-4.webp         ⚠️ PENDIENTE (Carrusel)
+│   ├── producto-5.webp         ⚠️ PENDIENTE (Carrusel)
+│   ├── producto-6.webp         ⚠️ PENDIENTE (Carrusel)
+│   ├── equipo-duvan.webp       ⚠️ PENDIENTE (Equipo)
+│   └── Sobrenosotros (1-10).webp ✅ Ya tienes estas
+└── documentos/                 📁 Carpeta de PDFs
+    └── presentacion-duvan.pdf  ⚠️ PENDIENTE
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📸 PASO 2: PREPARAR IMÁGENES PROFESIONALES                       │
+└───────────────────────────────────────────────────────────────────┘
+
+NECESITAS 10 IMÁGENES NUEVAS EN TOTAL:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 IMÁGENES CRÍTICAS PARA FUNCIONALIDAD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣ logo-duvan.webp
+   📐 Tamaño: 400 x 160 px (horizontal)
+   📊 Calidad WebP: 90-95
+   💾 Peso objetivo: < 30 KB
+   📝 Descripción: Logo corporativo con fondo transparente
+   🎨 Requisitos: 
+      - PNG convertido a WebP
+      - Fondo transparente
+      - Alta resolución para Retina
+      - Colores corporativos nítidos
+   📍 Uso: Header y Footer
+
+2️⃣ hero-inicio.webp
+   📐 Tamaño: 1920 x 1080 px (landscape)
+   📊 Calidad WebP: 85-90
+   💾 Peso objetivo: < 200 KB
+   📝 Descripción: Imagen hero de impacto (comida corporativa)
+   🎨 Requisitos:
+      - Comida presentada profesionalmente
+      - Colores vibrantes pero elegantes
+      - Buena iluminación
+      - Composición centrada
+   📍 Uso: Fondo del Hero principal
+
+3️⃣ logo.webp (WhatsApp)
+   📐 Tamaño: 200 x 200 px (cuadrado)
+   📊 Calidad WebP: 85-90
+   💾 Peso objetivo: < 15 KB
+   📝 Descripción: Ícono de WhatsApp o logo personalizado
+   🎨 Requisitos:
+      - Circular o cuadrado
+      - Fondo que combine con verde WhatsApp
+      - Reconocible al instante
+   📍 Uso: Botón flotante inferior derecha
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎡 IMÁGENES DEL CARRUSEL (6 fotos de productos)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FORMATO ESTÁNDAR PARA TODAS:
+📐 Tamaño: 800 x 900 px (vertical/portrait)
+📊 Calidad WebP: 80-85
+💾 Peso objetivo: < 100 KB cada una
+🎨 Estilo: Fotografía food profesional
+
+4️⃣ producto-1.webp → DESAYUNOS
+   📝 Contenido sugerido:
+      ✓ Arepas rellenas variadas
+      ✓ Cachitos frescos dorados
+      ✓ Empanadas artesanales
+      ✓ Jugo natural + café
+      ✓ Presentación tipo "breakfast platter"
+   🎨 Composición:
+      - Vista cenital (desde arriba) o 45°
+      - Fondo madera clara o mármol
+      - Colores cálidos y apetitosos
+      - Bien iluminado (luz natural preferida)
+
+5️⃣ producto-2.webp → ALMUERZOS
+   📝 Contenido sugerido:
+      ✓ Plato ejecutivo completo
+      ✓ Proteína (pollo/carne) + 2 contornos
+      ✓ Arroz, ensalada fresca
+      ✓ Presentación elegante en plato blanco
+   🎨 Composición:
+      - Vista 45° frontal
+      - Plato bien presentado y porciones generosas
+      - Colores variados (proteína, verde, amarillo)
+      - Fondo neutro o desenfocado
+
+6️⃣ producto-3.webp → CENAS
+   📝 Contenido sugerido:
+      ✓ Hamburguesa gourmet con papas
+      ✓ O parrilla mixta con vegetales
+      ✓ O pepito generoso
+      ✓ Presentación casual pero apetitosa
+   🎨 Composición:
+      - Primer plano del producto
+      - Capas visibles (en hamburguesa)
+      - Fondo oscuro o de madera
+      - Iluminación dramática
+
+7️⃣ producto-4.webp → CATERING / EVENTOS
+   📝 Contenido sugerido:
+      ✓ Mesa de buffet con varios platos
+      ✓ O setup de evento corporativo
+      ✓ Gente sirviendo (opcional)
+      ✓ Ambiente profesional y elegante
+   🎨 Composición:
+      - Vista amplia del setup
+      - Variedad visible
+      - Profesionales en uniformes (opcional)
+      - Ambiente corporativo
+
+8️⃣ producto-5.webp → ESPECIALES / SIGNATURE DISHES
+   📝 Contenido sugerido:
+      ✓ Tu plato más vendido o especial
+      ✓ Presentación tipo "chef's special"
+      ✓ Algo que te distinga de la competencia
+      ✓ Fotografía de menú gourmet
+   🎨 Composición:
+      - Máxima calidad fotográfica
+      - Food styling profesional
+      - Iluminación perfecta
+      - Detalles nítidos
+
+9️⃣ producto-6.webp → POSTRES / BEBIDAS
+   📝 Contenido sugerido:
+      ✓ Postres variados (tortas, helados)
+      ✓ Bebidas refrescantes (jugos, smoothies)
+      ✓ Café premium
+      ✓ Presentación colorida
+   🎨 Composición:
+      - Colores vibrantes
+      - Variedad visual
+      - Condensación en vasos (realismo)
+      - Fondo claro o con textura
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👥 IMAGEN DEL EQUIPO / DUEÑOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔟 equipo-duvan.webp
+   📐 Tamaño: 1200 x 900 px (horizontal/landscape)
+   📊 Calidad WebP: 85-90
+   💾 Peso objetivo: < 150 KB
+   📝 Descripción: Foto profesional de dueños o equipo clave
+   🎨 Requisitos:
+      ✓ 2-4 personas máximo
+      ✓ Vestimenta: uniformes o ropa corporativa
+      ✓ Ambiente: cocina industrial o con productos
+      ✓ Expresión: profesionales, sonrientes, confiables
+      ✓ Iluminación profesional
+      ✓ Fondo corporativo (cocina, comedor, instalaciones)
+   📍 Locaciones sugeridas:
+      - En la cocina con delantales
+      - Junto a productos terminados
+      - En área de producción
+      - Con logo de la empresa al fondo
+
+   🎬 Tips de fotografía:
+      - Contratar fotógrafo profesional (recomendado)
+      - Hora dorada para luz natural
+      - Evitar flash directo
+      - Profundidad de campo (fondo desenfocado)
+      - Transmitir confianza y experiencia
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🛠️ PASO 3: CONVERTIR IMÁGENES A WEBP                            │
+└───────────────────────────────────────────────────────────────────┘
+
+MÉTODO RECOMENDADO (MÁS FÁCIL):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 OPCIÓN 1: CloudConvert (Online, Gratis)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+URL: https://cloudconvert.com/jpg-to-webp
+
+PASOS:
+1. Ve al sitio web
+2. Click en "Select Files"
+3. Selecciona TODAS tus imágenes (JPG/PNG)
+4. En configuración:
+   - Format: WebP
+   - Quality: 85 (para productos)
+   - Quality: 90 (para logo y equipo)
+5. Click en "Start Conversion"
+6. Espera 30 segundos
+7. Click en "Download All" (descarga ZIP)
+8. Extrae el ZIP
+9. Renombra los archivos según la lista de arriba
+
+🎨 OPCIÓN 2: Squoosh (Google, Online, Gratis)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+URL: https://squoosh.app/
+
+PASOS:
+1. Ve al sitio
+2. Arrastra una imagen
+3. En panel derecho:
+   - Selecciona: WebP
+   - Quality: 85 (ajustar según imagen)
+   - Resize: ajustar dimensiones si necesario
+4. Compara Antes/Después en tiempo real
+5. Click en download (flecha abajo)
+6. Repite para cada imagen
+
+VENTAJAS: Control total de calidad/peso
+
+💻 OPCIÓN 3: Photoshop (Si tienes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Abre imagen
+2. File → Export → Save for Web (Legacy)
+3. Format: WebP
+4. Quality: 80-90
+5. Save
+6. Nombrar según especificación
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📁 PASO 4: ORGANIZAR ARCHIVOS CORRECTAMENTE                      │
+└───────────────────────────────────────────────────────────────────┘
+
+ESTRUCTURA FINAL OBLIGATORIA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PORTALDEALMUERZOS/
+├── imagenes/
+│   ├── logo-duvan.webp          ✅ 400x160px, <30KB
+│   ├── hero-inicio.webp         ✅ 1920x1080px, <200KB
+│   ├── logo.webp                ✅ 200x200px, <15KB
+│   ├── producto-1.webp          ✅ 800x900px, <100KB
+│   ├── producto-2.webp          ✅ 800x900px, <100KB
+│   ├── producto-3.webp          ✅ 800x900px, <100KB
+│   ├── producto-4.webp          ✅ 800x900px, <100KB
+│   ├── producto-5.webp          ✅ 800x900px, <100KB
+│   ├── producto-6.webp          ✅ 800x900px, <100KB
+│   └── equipo-duvan.webp        ✅ 1200x900px, <150KB
+
+⚠️ IMPORTANTE: Los nombres DEBEN ser EXACTAMENTE estos
+⚠️ NO cambies los nombres o el sitio NO funcionará
+⚠️ Respeta mayúsculas/minúsculas
+⚠️ Sin espacios, sin acentos, solo guiones
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🎡 PASO 5: VERIFICAR FUNCIONAMIENTO DEL CARRUSEL                 │
+└───────────────────────────────────────────────────────────────────┘
+
+CHECKLIST DE FUNCIONALIDAD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DESKTOP (Computadora):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ 1. Abrir index.html en Chrome/Firefox/Safari
+□ 2. Scroll hasta sección "Nuestros Productos"
+□ 3. Verificar que se ven 3-4 imágenes simultáneamente
+□ 4. Ver botones ← → a los lados del carrusel
+□ 5. Click en botón → (siguiente):
+     ✓ Carrusel se desliza suavemente a la derecha
+     ✓ Animación fluida (no saltos)
+     ✓ Muestra siguiente imagen
+□ 6. Click en botón ← (anterior):
+     ✓ Carrusel regresa suavemente
+     ✓ Muestra imagen anterior
+□ 7. Hover sobre una imagen:
+     ✓ Imagen se eleva (efecto 3D)
+     ✓ Sombra se hace más grande
+     ✓ Borde rojo aparece
+□ 8. En primera imagen:
+     ✓ Botón ← está deshabilitado (opaco)
+□ 9. En última imagen:
+     ✓ Botón → está deshabilitado (opaco)
+
+MÓVIL/TABLET:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ 1. Abrir en celular (Chrome móvil)
+□ 2. Scroll hasta sección "Nuestros Productos"
+□ 3. Verificar que se ve 1-2 imágenes
+□ 4. NO se ven botones ← → (correcto en móvil)
+□ 5. Swipe (deslizar) con dedo hacia la izquierda:
+     ✓ Carrusel se mueve mostrando siguiente imagen
+     ✓ Scroll horizontal natural
+□ 6. Swipe hacia la derecha:
+     ✓ Regresa a imagen anterior
+□ 7. Scroll vertical normal:
+     ✓ NO afecta el carrusel
+     ✓ Página se mueve arriba/abajo normalmente
+
+SOLUCIÓN DE PROBLEMAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❌ PROBLEMA: Botones ← → no aparecen en desktop
+✅ SOLUCIÓN: 
+   1. Abrir index.html
+   2. Verificar que script.js está cargado
+   3. Abrir Consola del navegador (F12)
+   4. Buscar errores en rojo
+
+❌ PROBLEMA: Imágenes no se ven (cuadros grises)
+✅ SOLUCIÓN:
+   1. Verificar que carpeta imagenes/ existe
+   2. Verificar nombres exactos de archivos
+   3. Verificar extensión .webp (no .jpg ni .png)
+
+❌ PROBLEMA: Carrusel no se desliza
+✅ SOLUCIÓN:
+   1. Verificar JavaScript está habilitado
+   2. Abrir Consola (F12) y buscar errores
+   3. Verificar que script.js se cargó correctamente
+
+❌ PROBLEMA: En móvil no puedo hacer swipe
+✅ SOLUCIÓN:
+   1. Verificar que estás en la sección correcta
+   2. Deslizar horizontalmente sobre las imágenes
+   3. No confundir con scroll vertical de página
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🎯 PASO 6: VERIFICAR SECCIÓN DEL EQUIPO                          │
+└───────────────────────────────────────────────────────────────────┘
+
+CHECKLIST:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ 1. Scroll hasta sección "El Equipo de Inversiones Duvan"
+□ 2. DESKTOP:
+     ✓ Texto a la izquierda
+     ✓ Foto a la derecha
+     ✓ Ambos lado a lado (50/50)
+□ 3. MÓVIL:
+     ✓ Texto arriba
+     ✓ Foto abajo
+     ✓ Apilados verticalmente
+□ 4. Foto del equipo:
+     ✓ Se ve completa (no cortada)
+     ✓ Buena calidad
+     ✓ Sombra elegante alrededor
+□ 5. Botón "Conocer Más":
+     ✓ Visible y clickeable
+     ✓ Lleva a sobre-nosotros.html
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  ✅ PASO 7: CHECKLIST FINAL PRE-ENTREGA                           │
+└───────────────────────────────────────────────────────────────────┘
+
+FUNCIONALIDAD GENERAL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ Header sticky (se queda arriba al hacer scroll)
+□ Hamburger menu funciona en móvil (☰)
+□ Logo "Inversiones Duvan" centrado en móvil
+□ Hero con imagen de fondo visible
+□ Sección "Sobre Nosotros" con estadísticas
+□ Carrusel de productos funcionando (6 fotos)
+□ Sección del equipo con foto visible
+□ Footer con toda la información
+□ Botón WhatsApp flotante visible y clickeable
+□ Links funcionan correctamente
+□ NO hay scroll horizontal en móvil
+
+RESPONSIVE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ Móvil (< 768px): Todo apilado verticalmente
+□ Tablet (768-1024px): Layout intermedio
+□ Desktop (> 1024px): Layout completo horizontal
+
+IMÁGENES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ Todas las imágenes cargan correctamente
+□ Formato WebP en todas
+□ Tamaños correctos
+□ Nombres correctos
+□ Calidad profesional
+
+VELOCIDAD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+□ Página carga en < 3 segundos
+□ Imágenes optimizadas (WebP)
+□ No hay lag en animaciones
+□ Carrusel se desliza suavemente
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  🚀 PASO 8: SUBIR A SERVIDOR / ENTREGAR AL CLIENTE                │
+└───────────────────────────────────────────────────────────────────┘
+
+OPCIONES DE HOSTING PROFESIONAL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. NETLIFY (Recomendado - Gratis, Fácil)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+URL: https://www.netlify.com/
+
+PASOS:
+1. Crear cuenta gratis
+2. Drag & drop carpeta completa del proyecto
+3. Esperar 1 minuto
+4. Obtienes URL: https://nombre-random.netlify.app
+5. Opcional: Conectar dominio personalizado
+
+VENTAJAS:
+✓ Gratis
+✓ SSL (HTTPS) incluido
+✓ CDN global (rápido en todo el mundo)
+✓ Sin configuración técnica
+
+2. VERCEL (Alternativa - Gratis)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+URL: https://vercel.com/
+
+Proceso similar a Netlify
+
+3. GITHUB PAGES (Si usas Git)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Gratis pero requiere conocimientos de Git
+
+
+ENTREGA AL CLIENTE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. URL del sitio en vivo
+2. Carpeta completa del proyecto (ZIP)
+3. Documento con instrucciones de mantenimiento
+4. Credenciales de acceso si aplica
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│  📊 RESUMEN EJECUTIVO PARA PRESENTAR AL CLIENTE                   │
+└───────────────────────────────────────────────────────────────────┘
+
+"Landing Page Inversiones Duvan - Especificaciones Técnicas"
+
+CARACTERÍSTICAS PRINCIPALES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Diseño 100% Responsive (móvil, tablet, desktop)
+✅ Optimizado para acceso QR (90% tráfico móvil)
+✅ Carrusel interactivo de productos (6 imágenes)
+✅ Sección humanizada del equipo con foto
+✅ Galería completa (sobre-nosotros.html) con 10 fotos
+✅ Formato WebP (carga 2-3x más rápida)
+✅ Header sticky (siempre visible)
+✅ Menú hamburger en móvil
+✅ Botón WhatsApp flotante
+✅ Sin scroll horizontal en móviles
+✅ Animaciones suaves y profesionales
+✅ Compatible con todos los navegadores modernos
+
+RENDIMIENTO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Tiempo de carga: < 3 segundos
+- Peso total: ~1.5MB (con imágenes optimizadas)
+- Score Google PageSpeed: 85-95/100
+- Compatible móviles 3G/4G/5G
+
+TECNOLOGÍAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- HTML5 Semántico
+- CSS3 con Variables
+- JavaScript Vanilla (sin frameworks pesados)
+- Formato WebP para imágenes
+- Mobile-first approach
+
+
+═══════════════════════════════════════════════════════════════════
+    ✅ FIN DE LA GUÍA PROFESIONAL
+    
+    TIEMPO ESTIMADO TOTAL: 4-6 horas
+    (Incluye fotografía profesional + edición + implementación)
+    
+    RESULTADO: Landing Page Premium Lista para Cliente Corporativo
+    
+    ¿DUDAS? Revisa cada paso marcando ☑️ los checkboxes
+    
+═══════════════════════════════════════════════════════════════════

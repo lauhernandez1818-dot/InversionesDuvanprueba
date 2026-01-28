@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Inversiones Duvan - 15 años en alimentación corporativa. Capacidad de 3.000-6.000 comidas diarias con logística 360° en la Gran Caracas.">
+    <meta name="keywords" content="alimentación corporativa, catering empresarial, comedor industrial, Caracas">
+    <meta name="theme-color" content="#D32F2F">
+    
+    <!-- Prevenir delay en touch events móviles -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!-- Optimización para dispositivos móviles -->
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Inversiones Duvan">
+    
+    <title>Inversiones Duvan - Alimentación Corporativa de Alta Gama</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================================
+         HEADER STICKY - Navegación Principal
+         ======================================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav-wrapper">
+                <!-- Hamburger Menu (Móvil) - IZQUIERDA -->
+                <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <!-- IMAGEN: Logo corporativo (imagenes/logo-duvan.webp) 
+                     Formato: WebP transparente, 200x80px recomendado -->
+                <div class="logo">
+                    <a href="#inicio">
+                        <img src="imagenes/logo-duvan.webp" alt="Inversiones Duvan Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Nombre de marca (alternativa al logo en móvil) -->
+                <h1 class="brand-name">Inversiones Duvan</h1>
+
+                <!-- Menú de Navegación -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#menu" class="nav-link">Menú</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#contacto" class="btn btn-header">Pedir Ahora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION - Impacto Visual
+         ======================================== -->
+    <section class="hero" id="inicio">
+        <!-- IMAGEN: Hero principal (imagenes/hero-inicio.webp)
+             Dimensiones: 1920x1080px, optimizada <150KB (WebP)
+             Descripción: Imagen de alta calidad mostrando alimentos corporativos -->
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Alimentación Corporativa de Alta Gama en la Gran Caracas</h1>
+                <p class="hero-subtitle">Transformamos la alimentación en una experiencia de bienestar y eficiencia</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">Ver Menú</a>
+                    <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SOBRE NOSOTROS - Resumen Destacado
+         ======================================== -->
+    <section class="about-section" id="sobre-nosotros">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p class="section-subtitle">Líderes en alimentación corporativa desde hace más de una década</p>
+            </div>
+
+            <!-- Resumen compacto con CTA -->
+            <div class="about-summary">
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6,000</div>
+                        <div class="stat-label">Comidas Diarias</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Logística 360°</div>
+                    </div>
+                </div>
+                
+                <div class="about-cta">
+                    <p class="about-intro">
+                        Somos líderes en alimentación corporativa en la Gran Caracas. Nuestra infraestructura de clase mundial y compromiso con la excelencia nos permite servir entre 3,000 y 6,000 comidas diarias, manteniendo siempre los más altos estándares de calidad, frescura y puntualidad.
+                    </p>
+                    <a href="sobre-nosotros.html" class="btn btn-primary">Ver Galería Completa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CARRUSEL DE PRODUCTOS
+         ======================================== -->
+    <section class="products-carousel" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-subtitle">Variedad y calidad en cada servicio</p>
+            </div>
+
+            <!-- Carrusel horizontal de fotos -->
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                
+                <div class="carousel-track">
+                    <!-- IMAGEN 1 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/producto-1.webp" alt="Desayunos Inversiones Duvan" loading="lazy">
+                        <div class="carousel-caption">
+                            <h3>Desayunos</h3>
+                        </div>
+                    </div>
+                    <!-- IMAGEN 2 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/producto-2.webp" alt="Almuerzos Ejecutivos" loading="lazy">
+                        <div class="carousel-caption">
+                            <h3>Almuerzos</h3>
+                        </div>
+                    </div>
+                    <!-- IMAGEN 3 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/producto-3.webp" alt="Cenas Corporativas" loading="lazy">
+                        <div class="carousel-caption">
+                            <h3>Cenas</h3>
+                        </div>
+                    </div>
+                    <!-- IMAGEN 4 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/producto-4.webp" alt="Catering y Eventos" loading="lazy">
+                        <div class="carousel-caption">
+                            <h3>Catering</h3>
+                        </div>
+                    </div>
+                    <!-- IMAGEN 5 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/producto-5.webp" alt="Menús Especiales" loading="lazy">
+                        <div class="carousel-caption">
+                            <h3>Especiales</h3>
+                        </div>
+                    </div>
+                    <!-- IMAGEN 6 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/producto-6.webp" alt="Postres y Bebidas" loading="lazy">
+                        <div class="carousel-caption">
+                            <h3>Postres</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn carousel-next" aria-label="Siguiente">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         EQUIPO / DUEÑOS
+         ======================================== -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-content">
+                <div class="team-text">
+                    <h2 class="section-title">El Equipo de Inversiones Duvan</h2>
+                    <p>
+                        Detrás de cada comida hay un equipo apasionado por la excelencia. Con más de 15 años de experiencia, 
+                        nuestros fundadores y su equipo se dedican diariamente a transformar la alimentación corporativa 
+                        en una experiencia memorable.
+                    </p>
+                    <p>
+                        Desde la selección de ingredientes frescos hasta la entrega puntual, cada detalle importa. 
+                        Nuestro compromiso es simple: ofrecer comida de calidad que impulse el bienestar y productividad 
+                        de tu equipo.
+                    </p>
+                    <a href="sobre-nosotros.html" class="btn btn-secondary">Conocer Más</a>
+                </div>
+                <div class="team-image">
+                    <!-- IMAGEN: Foto de los dueños/equipo (imagenes/equipo-duvan.webp)
+                         Dimensiones: 800x600px, optimizada
+                         Descripción: Foto profesional de los dueños o equipo -->
+                    <img src="imagenes/equipo-duvan.webp" alt="Equipo Inversiones Duvan" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER - Información Corporativa
+         ======================================== -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Columna 1: Misión -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <!-- IMAGEN: Logo footer (imagenes/logo-duvan.webp)
+                             Versión en blanco si es posible -->
+                        <img src="imagenes/logo-duvan.webp" alt="Inversiones Duvan" class="footer-logo-img">
+                    </div>
+                    <p class="footer-text">
+                        Excelencia en alimentación corporativa desde 2010. Transformamos cada comida en una experiencia que impulsa el bienestar y la productividad de tu equipo.
+                    </p>
+                    <div class="footer-download">
+                        <a href="documentos/presentacion-duvan.pdf" class="btn btn-download" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3V16M12 16L7 11M12 16L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M3 20H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Descargar Dossier Completo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div>
+                                <a href="tel:+584241520170">0424-1520170</a>
+                                <a href="tel:+584142537506">0414-2537506</a>
+                            </div>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.5145 13.6728 12.4855 13.6728 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <a href="mailto:info@inversionesduvan.com">info@inversionesduvan.com</a>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Lun - Vie: 7:00 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Inversiones Duvan. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOTÓN FLOTANTE WHATSAPP
+         ======================================== -->
+    <a href="https://wa.me/584241520170?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <img src="imagenes/logo.webp" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

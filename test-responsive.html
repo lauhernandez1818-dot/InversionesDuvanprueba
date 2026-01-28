@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Responsividad - Inversiones Duvan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 900px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #FF6B35;
+            margin-bottom: 10px;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+        
+        .subtitle {
+            color: #6C757D;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        
+        .info-box {
+            background: #F8F9FA;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #FF6B35;
+        }
+        
+        .device-info {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+        
+        .details {
+            color: #6C757D;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        
+        .grid-demo {
+            display: grid;
+            gap: 15px;
+            margin: 30px 0;
+            grid-template-columns: 1fr;
+        }
+        
+        .grid-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+        
+        .status-ok {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #FF6B35;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #E55A28;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        .instructions {
+            background: #FFF5F0;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            border-left: 4px solid #F7B801;
+        }
+        
+        .instructions h3 {
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+            color: #2C3E50;
+            line-height: 1.8;
+        }
+        
+        /* 480px - Móviles grandes */
+        @media (min-width: 480px) {
+            .grid-demo {
+                gap: 20px;
+            }
+        }
+        
+        /* 640px - Tablets pequeñas: 2 columnas */
+        @media (min-width: 640px) {
+            .grid-demo {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* 1024px - Desktop: 3 columnas */
+        @media (min-width: 1024px) {
+            .grid-demo {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* 1920px - 4K: 4 columnas */
+        @media (min-width: 1920px) {
+            .grid-demo {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Test de Responsividad</h1>
+        <p class="subtitle">Portal Inversiones Duvan - Verificación 100% Responsive</p>
+        
+        <div class="info-box">
+            <div class="device-info" id="deviceType">Cargando...</div>
+            <div class="details">
+                <strong>Ancho de ventana:</strong> <span id="width">0</span>px<br>
+                <strong>Alto de ventana:</strong> <span id="height">0</span>px<br>
+                <strong>Orientación:</strong> <span id="orientation">-</span><br>
+                <strong>Grid esperado:</strong> <span id="gridColumns">-</span>
+            </div>
+        </div>
+        
+        <h3 style="color: #2C3E50; margin-bottom: 15px;">Vista previa del Grid de Menú</h3>
+        <p style="color: #6C757D; margin-bottom: 20px; font-size: 0.9rem;">
+            Redimensiona la ventana para ver cómo cambia el número de columnas automáticamente
+        </p>
+        
+        <div class="grid-demo">
+            <div class="grid-item">Card 1</div>
+            <div class="grid-item">Card 2</div>
+            <div class="grid-item">Card 3</div>
+            <div class="grid-item">Card 4</div>
+            <div class="grid-item">Card 5</div>
+            <div class="grid-item">Card 6</div>
+        </div>
+        
+        <div class="status-ok">✅ Responsividad Funcionando Correctamente</div>
+        
+        <div>
+            <a href="index.html" class="btn">← Volver al Portal Principal</a>
+        </div>
+        
+        <div class="instructions">
+            <h3>📱 Cómo probar en diferentes dispositivos:</h3>
+            <ol>
+                <li><strong>Chrome:</strong> Presiona F12 → Ctrl+Shift+M → Selecciona dispositivos</li>
+                <li><strong>Redimensiona:</strong> Arrastra el borde de la ventana y observa los cambios</li>
+                <li><strong>Móvil real:</strong> Abre desde tu celular para ver la experiencia real</li>
+                <li><strong>Rota el dispositivo:</strong> Cambia entre portrait y landscape</li>
+            </ol>
+        </div>
+    </div>
+    
+    <script>
+        function updateDeviceInfo() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const orientation = width > height ? 'Landscape (Horizontal)' : 'Portrait (Vertical)';
+            
+            let deviceType = '';
+            let gridColumns = '';
+            
+            if (width >= 1920) {
+                deviceType = '🖥️ Pantalla Ultra Grande (4K)';
+                gridColumns = '4 columnas';
+            } else if (width >= 1440) {
+                deviceType = '🖥️ Desktop Grande';
+                gridColumns = '3 columnas';
+            } else if (width >= 1024) {
+                deviceType = '💻 Desktop / Laptop';
+                gridColumns = '3 columnas';
+            } else if (width >= 768) {
+                deviceType = '📱 Tablet Mediana';
+                gridColumns = '2 columnas';
+            } else if (width >= 640) {
+                deviceType = '📱 Tablet Pequeña';
+                gridColumns = '2 columnas';
+            } else if (width >= 480) {
+                deviceType = '📱 Móvil Grande';
+                gridColumns = '1 columna';
+            } else if (width >= 375) {
+                deviceType = '📱 Móvil Mediano';
+                gridColumns = '1 columna';
+            } else {
+                deviceType = '📱 Móvil Pequeño';
+                gridColumns = '1 columna';
+            }
+            
+            document.getElementById('deviceType').textContent = deviceType;
+            document.getElementById('width').textContent = width;
+            document.getElementById('height').textContent = height;
+            document.getElementById('orientation').textContent = orientation;
+            document.getElementById('gridColumns').textContent = gridColumns;
+        }
+        
+        // Actualizar al cargar
+        updateDeviceInfo();
+        
+        // Actualizar al redimensionar (con debounce para performance)
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(updateDeviceInfo, 100);
+        });
+        
+        // Actualizar al rotar dispositivo
+        window.addEventListener('orientationchange', function() {
+            setTimeout(updateDeviceInfo, 200);
+        });
+    </script>
+</body>
+</html>

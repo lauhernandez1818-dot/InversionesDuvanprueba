@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Inversiones Duvan - Galería completa de nuestras instalaciones, procesos y equipo">
+    <meta name="theme-color" content="#D32F2F">
+    
+    <title>Sobre Nosotros - Inversiones Duvan</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-primary: #D32F2F;
+            --color-secondary: #1976D2;
+            --color-bg: #FFFFFF;
+            --color-bg-dark: #1A1A1A;
+            --color-text: #1A1A1A;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Poppins', sans-serif;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background-color: #F5F5F5;
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+        
+        /* Header Simple */
+        .header {
+            background-color: var(--color-bg);
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background-color: rgba(211,47,47,0.1);
+        }
+        
+        .page-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            color: var(--color-primary);
+            font-weight: 800;
+        }
+        
+        /* Container Principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .intro h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(1.75rem, 5vw, 3rem);
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .intro p {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Galería de Imágenes */
+        .gallery {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .gallery-caption {
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .gallery-caption h3 {
+            font-family: var(--font-heading);
+            font-size: 1.125rem;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-caption p {
+            font-size: 0.875rem;
+            color: #666;
+        }
+        
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.95);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 95%;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        
+        .lightbox-caption {
+            color: white;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        
+        /* MÓVIL: Imagen ampliada MUY GRANDE */
+        @media (max-width: 767px) {
+            .lightbox {
+                padding: 0;
+            }
+            
+            .lightbox-content {
+                max-width: 100%;
+                max-height: 100vh;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+            }
+            
+            .lightbox-image {
+                max-width: 100vw;
+                max-height: 100vh;
+                width: 100vw;
+                height: auto;
+                object-fit: contain;
+                border-radius: 0;
+            }
+            
+            .lightbox-caption {
+                position: absolute;
+                bottom: 80px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+                padding: 2rem 1rem 1rem;
+                margin: 0;
+                font-size: 1.125rem;
+                font-weight: 600;
+            }
+            
+            .lightbox-close {
+                top: 10px;
+                right: 10px;
+                width: 48px;
+                height: 48px;
+                font-size: 28px;
+                z-index: 10000;
+            }
+            
+            .lightbox-counter {
+                top: 10px;
+                left: 10px;
+                background: rgba(0,0,0,0.7);
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+            
+            .lightbox-nav {
+                width: 60px;
+                height: 60px;
+                font-size: 32px;
+                background: rgba(0,0,0,0.5);
+                backdrop-filter: blur(10px);
+            }
+            
+            .lightbox-prev {
+                left: 5px;
+            }
+            
+            .lightbox-next {
+                right: 5px;
+            }
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
+            z-index: 10000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .lightbox-close:hover {
+            transform: scale(1.1);
+        }
+        
+        .lightbox-close:active {
+            transform: scale(0.95);
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .lightbox-nav:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .lightbox-nav:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+        
+        .lightbox-prev {
+            left: 10px;
+        }
+        
+        .lightbox-next {
+            right: 10px;
+        }
+        
+        /* Contador */
+        .lightbox-counter {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            color: white;
+            font-size: 0.875rem;
+            background: rgba(0,0,0,0.5);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        /* Footer Simple */
+        .footer {
+            background-color: var(--color-bg-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        .footer a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (min-width: 640px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .container {
+                padding: 3rem 2rem;
+            }
+            
+            .lightbox-image {
+                max-width: 90vw;
+                max-height: 85vh;
+            }
+        }
+        
+        /* Asegurar NO scroll horizontal */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        * {
+            max-width: 100%;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5"/>
+                </svg>
+                Volver al Inicio
+            </a>
+            <div class="page-title">Galería</div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        <div class="intro">
+            <h1>Sobre Inversiones Duvan</h1>
+            <p>Explora nuestra galería completa de instalaciones, procesos de producción y el equipo que hace posible la excelencia en alimentación corporativa. Haz clic en cualquier imagen para ampliarla.</p>
+        </div>
+
+        <!-- Galería de Imágenes -->
+        <div class="gallery" id="gallery">
+            
+            <div class="gallery-item" data-index="0">
+                <img src="imagenes/Sobrenosotros (1).webp" alt="Inversiones Duvan - Instalaciones 1" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Nuestras Instalaciones</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="1">
+                <img src="imagenes/Sobrenosotros (2).webp" alt="Inversiones Duvan - Cocina Industrial" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="2">
+                <img src="imagenes/Sobrenosotros (3).webp" alt="Inversiones Duvan - Proceso de Producción" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Proceso de Producción</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="3">
+                <img src="imagenes/Sobrenosotros (4).webp" alt="Inversiones Duvan - Equipo de Trabajo" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Porque Elegirnos</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="4">
+                <img src="imagenes/Sobrenosotros (5).webp" alt="Inversiones Duvan - Área de Preparación" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Misión</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="5">
+                <img src="imagenes/Sobrenosotros (6).webp" alt="Inversiones Duvan - Control de Calidad" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Beneficios De Contratarnos</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="6">
+                <img src="imagenes/Sobrenosotros (7).webp" alt="Inversiones Duvan - Logística" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Nuestras Opciones</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="7">
+                <img src="imagenes/Sobrenosotros (8).webp" alt="Inversiones Duvan - Almacenamiento" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Área de Almacenamiento</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="8">
+                <img src="imagenes/Sobrenosotros (9).webp" alt="Inversiones Duvan - Tecnología" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Tecnología de Punta</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-index="9">
+                <img src="imagenes/Sobrenosotros (10).webp" alt="Inversiones Duvan - Compromiso" loading="lazy">
+                <div class="gallery-caption">
+                    <h3>Nuestro Compromiso</h3>
+                    <p>Click para ampliar</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-counter" id="lightboxCounter">1 / 10</span>
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">×</button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Anterior">‹</button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Siguiente">›</button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Inversiones Duvan. <a href="index.html">Volver al inicio</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Elementos
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const lightboxCounter = document.getElementById('lightboxCounter');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        let currentIndex = 0;
+        const totalImages = galleryItems.length;
+        
+        // Abrir lightbox
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentIndex = index;
+                openLightbox();
+            });
+        });
+        
+        function openLightbox() {
+            const item = galleryItems[currentIndex];
+            const img = item.querySelector('img');
+            const caption = item.querySelector('h3').textContent;
+            
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightboxCaption.textContent = caption;
+            lightboxCounter.textContent = `${currentIndex + 1} / ${totalImages}`;
+            
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        function showNext() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            openLightbox();
+        }
+        
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            openLightbox();
+        }
+        
+        // Event listeners
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxNext.addEventListener('click', showNext);
+        lightboxPrev.addEventListener('click', showPrev);
+        
+        // Cerrar con ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+        });
+        
+        // Cerrar al hacer clic fuera de la imagen
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        
+        // Touch events para móviles
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        lightbox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        lightbox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) showNext();
+            if (touchEndX > touchStartX + 50) showPrev();
+        }
+    </script>
+
+</body>
+</html>
