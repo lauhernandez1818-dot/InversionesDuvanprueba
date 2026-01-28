@@ -260,23 +260,6 @@ if (carouselTrack && carouselPrev && carouselNext) {
   carouselTrack.addEventListener('scroll', updateCarouselButtons);
   updateCarouselButtons(); // Inicializar
 
-  // Touch swipe para móviles
-  let startX = 0;
-  let scrollLeft = 0;
-
-  carouselTrack.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].pageX - carouselTrack.offsetLeft;
-    scrollLeft = carouselTrack.scrollLeft;
-  });
-
-  carouselTrack.addEventListener('touchmove', (e) => {
-    if (!startX) return;
-    const x = e.touches[0].pageX - carouselTrack.offsetLeft;
-    const walk = (x - startX) * 2;
-    carouselTrack.scrollLeft = scrollLeft - walk;
-  });
-
-  carouselTrack.addEventListener('touchend', () => {
-    startX = 0;
-  });
+  // El scroll nativo del navegador maneja el touch en móviles
+  // No se necesita código adicional - el CSS ya está optimizado
 }

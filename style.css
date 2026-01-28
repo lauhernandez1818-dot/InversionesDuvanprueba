@@ -950,10 +950,13 @@ button {
   }
 }
 
-.carousel-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-primary);
+/* Hover solo en dispositivos con puntero (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .carousel-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+  }
 }
 
 .carousel-item img {
